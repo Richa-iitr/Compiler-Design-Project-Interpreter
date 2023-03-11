@@ -401,7 +401,7 @@ public Node expr() {
 
     private Node expression() {
         Node node = this.expr();
-        System.out.println("Result: " + node.evaluate());
+        System.out.println(node.evaluate());
         return node;
     }
 
