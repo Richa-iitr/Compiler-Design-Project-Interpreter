@@ -15,6 +15,7 @@ java JavaSubtractionInterpreter
 You can find some examples of the language in [line](https://github.com/Richa-iitr/Compiler-Design-Project-Interpreter/blob/main/JavaSubtractionInterpreter.java#L485)
 
 ### Output
+Prints the difference
 ![Screenshot from 2023-03-11 14-32-37](https://user-images.githubusercontent.com/76250660/224476959-8994cc36-8097-4cfe-a569-a25be49822cf.png)
 
 ```
@@ -42,6 +43,7 @@ For remaining grammar the [test](https://github.com/Richa-iitr/Compiler-Design-P
 You can find some examples of the language in [src/main/resources](https://github.com/Richa-iitr/Compiler-Design-Project-Interpreter/blob/main/dummy-language-interpreter-in-java/src/main/resources/test.c%2B-)
 
 ### Output
+The result of subtraction is as in the start of the output in the sample case.
 ![Screenshot from 2023-03-11 14-59-25](https://user-images.githubusercontent.com/76250660/224476950-024cb023-3a64-4777-a5d5-b1ec325dcc28.png)
 
 
