@@ -5,7 +5,7 @@ This project contains a toy c-like programming language.
 For now the language is implemented by an interpreter that runs directly on the parsed AST.
 
 ## Examples 
-You can find some examples of the language in [src/main/resources](https://github.com/bamless/interpreter/tree/master/src/main/resources)
+You can find some examples of the language in [src/main/resources](https://github.com/Richa-iitr/Compiler-Design-Project-Interpreter/blob/main/dummy-language-interpreter-in-java/src/main/resources/test.c%2B-)
 
 ## Run?
 Compile it using the maven command: (If maven not installed install using `sudo apt install maven` in ubuntu)
