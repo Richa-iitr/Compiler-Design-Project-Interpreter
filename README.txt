@@ -10,10 +10,10 @@ javac JavaSubtractionInterpreter.java
 java JavaSubtractionInterpreter
 
 Examples
-You can find some examples of the language in line
-    int x = 10 - 6
-    int x = -10 - (-6)
-    int x = -10 - (-7)
+You can find some examples of the language in line, only change the expression in this line for different testcases
+    int x = 10 - 6;
+    int x = -10 - (-6);
+    int x = -10 - (-7);
 
 Output
 Prints the difference 
