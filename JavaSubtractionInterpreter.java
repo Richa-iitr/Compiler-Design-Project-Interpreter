@@ -495,7 +495,7 @@ public class JavaSubtractionInterpreter {
         //change the input expression here: note for handling complex expressions like different variables names and then operating we can modify the way expr() is handled
     String input = "public class MyClass {\n" +
                    "    public static void main(String[] args) {\n" +
-                   "        int x = -10 - -6;\n" +
+                   "        int x = -10 - (-6);\n" +
                    "    }\n" +
                    "}";
     
