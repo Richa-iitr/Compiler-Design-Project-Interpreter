@@ -414,7 +414,7 @@ public Node expr() {
 
     private Node expression() {
         Node node = this.expr();
-        System.out.println(node.evaluate());
+        // System.out.println(node.evaluate());
         return node;
     }
 
@@ -439,7 +439,7 @@ public Node expr() {
         return node;
     }
 
-    private Node classDeclaration() {
+    private classDeclarationNode classDeclaration() {
         this.eat(Token.TokenType.PUBLIC);
         this.eat(Token.TokenType.CLASS);
         IdentifierNode classNameNode = this.identifier();
@@ -451,7 +451,8 @@ public Node expr() {
     }
 
     public void parse() {
-        Node node = this.classDeclaration();
+        classDeclarationNode node = this.classDeclaration();
+        System.out.println(node.getBody().get(0).evaluate());
     }
 }
 
@@ -495,7 +496,7 @@ public class JavaSubtractionInterpreter {
         //change the input expression here: note for handling complex expressions like different variables names and then operating we can modify the way expr() is handled
     String input = "public class MyClass {\n" +
                    "    public static void main(String[] args) {\n" +
-                   "        int x = -10 - (-6);\n" +
+                   "        int x = -10 - (-3);\n" +
                    "    }\n" +
                    "}";
     

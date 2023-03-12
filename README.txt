@@ -13,11 +13,13 @@ Examples
 You can find some examples of the language in line
     int x = 10 - 6
     int x = -10 - (-6)
+    int x = -10 - (-7)
 
 Output
 Prints the difference 
 4
 -4
+-3
 
 Interpreter-2
 The grammar is C-like
