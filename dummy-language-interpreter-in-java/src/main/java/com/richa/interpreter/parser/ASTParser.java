@@ -72,8 +72,7 @@ import com.richa.interpreter.lex.Token;
  * The grammar rules are reported as javadoc on top of every parser method (in
  * EBNF form). Non terminals always begin with a capital letter. for terminals
  * enclosed by <> see lexical specification.
- * 
- * @author fabrizio
+ *
  *
  */
 public class ASTParser {
