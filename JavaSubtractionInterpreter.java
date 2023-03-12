@@ -74,6 +74,16 @@ class Lexer {
         return Integer.parseInt(result.toString());
     }
 
+    private int neginteger() {
+        StringBuilder result = new StringBuilder();
+        while (this.currentChar != '\0' && Character.isDigit(this.currentChar)) {
+            result.append(this.currentChar);
+            this.advance();
+        }
+        // this.position++;
+        return Integer.parseInt(result.toString()) * -1;
+    }
+
     private void advance() {
         this.position++;
         if (this.position > this.input.length() - 1) {
@@ -138,6 +148,9 @@ class Lexer {
 
             if (this.currentChar == '-') {
                 this.advance();
+                if (Character.isDigit(this.currentChar)) {
+                    return new Token(Token.TokenType.INTEGER, Integer.toString(this.neginteger()));
+                }
                 return new Token(Token.TokenType.MINUS, "-");
             }
             if (this.currentChar == ';') {
@@ -482,7 +495,7 @@ public class JavaSubtractionInterpreter {
         //change the input expression here: note for handling complex expressions like different variables names and then operating we can modify the way expr() is handled
     String input = "public class MyClass {\n" +
                    "    public static void main(String[] args) {\n" +
-                   "        int x = 10 - 6;\n" +
+                   "        int x = -10 - -6;\n" +
                    "    }\n" +
                    "}";
     
