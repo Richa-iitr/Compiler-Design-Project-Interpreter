@@ -12,10 +12,12 @@ java JavaSubtractionInterpreter
 Examples
 You can find some examples of the language in line
     int x = 10 - 6
+    int x = -10 - (-6)
 
 Output
 Prints the difference 
 4
+-4
 
 Interpreter-2
 The grammar is C-like
